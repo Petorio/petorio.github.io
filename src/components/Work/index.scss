@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    margin: 0 auto;
+    color: #fff;
+    transform: translateY(-50%);
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    gap: 1%;
+    vertical-align: middle;
+    font-family: 'Coolvetica';
+    font-weight: 200;
+  }
+
+  .grid-item-link {
+    display: flex;
+    font-size: 34px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: .7;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 1.0;
+    }
+  }
+
+  .grid-item {
+    display: flex;
+    font-size: 26px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+  .grid-item:nth-child(4n+1), .grid-item-link:nth-child(4n+1) {
+    background: #E69C24;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .grid-item:nth-child(4n+2), .grid-item:nth-child(4n+3), 
+  .grid-item-link:nth-child(4n+2),.grid-item-link:nth-child(4n+3) {
+    background: #9EADBD;
+  }
+  
+  .grid-item:nth-child(4n+4),
+  .grid-item-link:nth-child(4n+4) {
+    background: #006B83;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .project-info {
+    color: #fff; 
+  }
