@@ -1,5 +1,4 @@
 import './index.scss'
-import { useState } from 'react'
 import LogoP from '../../assets/images/logo-p.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -8,11 +7,11 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => (
     <div className="nav-bar">
-        <Link className="logo" to='/'>
+        <Link className="logo" to='/react-portfolio'>
             <img src={LogoP} alt="logo" />
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink exact="true" activeclassname="active" to="/react-portfolio">
                 <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="about-link" to="/about">

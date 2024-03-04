@@ -1,6 +1,5 @@
 import './index.scss'
 import { useEffect, useState } from 'react'
-import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 
@@ -36,43 +35,6 @@ const Wordpress = () => {
                         to deploy this without much cost.
                     </p>
                 </div>
-                <div className='grid-container'>
-                    <div>
-                        <h1>
-                            In Progress...
-                        </h1>
-                    </div>
-                </div>
-                {/* <div className='grid-container'>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                    </div>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                </div> */}
             </div>
             <Loader type='pacman' />
         </>

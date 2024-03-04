@@ -2,6 +2,9 @@ import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
+import SleepP1 from '../../assets/images/sleeptracker-1.PNG'
 
 const Sleeptracker = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -27,12 +30,18 @@ const Sleeptracker = () => {
                         There is a small handful of data that needed to be stored in a database, so I integrated Google Firebase for a quick-and-easy backend 
                         that allows users to analyze their long-term sleep patterns. Users also have the ability to opt-in to reminders to log their sleep.
                     </p>
+                    <a target="_blank" rel='noreferrer' href='https://github.com/Petorio/Sleeptracker' className='github-logo'>
+                        <FontAwesomeIcon icon={faGithub} color='#fff'/>
+                    </a>
                 </div>
                 <div className='grid-container'>
-                    <div>
-                        <h1>
-                            In Progress...
-                        </h1>
+                    <div className='grid-text'>
+                        <p>
+                            On the right you can see the screen to log your sleepiness from Month, Day, Year, and Time.
+                        </p>
+                    </div>
+                    <div className='grid-image'>
+                        <img src={SleepP1} alt="sleeptracker-img-1" />
                     </div>
                 </div>
             </div>

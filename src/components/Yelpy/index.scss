@@ -12,11 +12,15 @@
     font-weight: 200;
   }
 
-  .grid-text {
-    background: purple;
-    font-size: 26px;
+  .grid-text p {
+    font-size: 40px;
   }
 
-  .grid-text > span {
-    padding: 10px;
+  .github-logo {
+    font-size: 32px;
+
+    &:hover svg {
+      color: #ffd700;
+    }
+
   }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import LogoTitle from '../../assets/images/logo-p.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
@@ -10,7 +9,7 @@ import Pdf from '../../assets/images/resume.pdf';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = ['e', 't', 'e', 'r',',']
+    const nameArray = [' ','P', 'e', 't', 'e', 'r',',']
     const jobArray = ['S', 'o', 'f','t','w','a','r','e',' ','E','n','g','i','n','e','e','r','.']
 
     useEffect(() => {
@@ -31,7 +30,6 @@ const Home = () => {
                         <span className={`${letterClass} _14`}>I</span>
                         <span className={`${letterClass} _15`}>'</span>
                         <span className={`${letterClass} _16`}>m</span>
-                        <img src={LogoTitle} alt="developer" />
                         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
                         <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={18}/>

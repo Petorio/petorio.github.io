@@ -2,6 +2,9 @@ import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
+import RunP from '../../assets/images/runkeeper-1.PNG'
 
 const Runkeeper = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,46 +32,22 @@ const Runkeeper = () => {
                     </p>
                     <p>
                         After gaining this data, I created an interactive search interface for quick access to explore Runkeeper activities. Once a search was complete, 
-                        activity types and categories were visualized using Vega-Lie, which displayed graphs based on the search parameters.
+                        activity types and categories were visualized using Vega-Lite, which displayed graphs based on the search parameters.
                     </p>
+                    <a target="_blank" rel='noreferrer' href='https://github.com/Petorio/Runkeeper' className='github-logo'>
+                        <FontAwesomeIcon icon={faGithub} color='#fff'/>
+                    </a>
                 </div>
                 <div className='grid-container'>
-                    <div>
-                        <h1>
-                            In Progress...
-                        </h1>
+                    <div className='grid-text'>
+                        <p>
+                            On the right you can see a graph displaying 16 different ypes of activities people logged with Runkeeper.
+                        </p>
+                    </div>
+                    <div className='grid-image'>
+                        <img src={RunP} alt="runkeeper-img-1" />
                     </div>
                 </div>
-                {/* <div className='grid-container'>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                    </div>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                </div> */}
             </div>
             
             <Loader type='pacman' />

@@ -8,15 +8,20 @@
     left: 50%;
     top: 50%;
     gap: 1%;
-    font-family: 'Coolvetica';
-    font-weight: 200;
   }
 
   .grid-text {
-    background: purple;
-    font-size: 26px;
+    background: none;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', 'sans-serif';
+    text-align: right;
   }
 
-  .grid-text > span {
-    padding: 10px;
+  .github-logo {
+    font-size: 32px;
+
+    &:hover svg {
+      color: #ffd700;
+    }
+
   }

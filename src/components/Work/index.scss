@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
     margin: 0 auto;
     color: #fff;
     transform: translateY(-50%);

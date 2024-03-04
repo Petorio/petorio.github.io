@@ -2,6 +2,8 @@ import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
 
 const Yelpy = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -27,44 +29,17 @@ const Yelpy = () => {
                         Yelpy runs through AWS' EC2 with their default VPC on two subnets. At first I leveraged their RDS service as well; however,
                         I realized that this application does not need a database for now.
                     </p>
+                    <a target="_blank" rel='noreferrer' href='https://github.com/Petorio/I-m-Feeling-Yelpy' className='github-logo'>
+                        <FontAwesomeIcon icon={faGithub} color='#fff'/>
+                    </a>
                 </div>
                 <div className='grid-container'>
-                    <div>
-                        <h1>
-                            In Progress...
-                        </h1>
+                    <div className='grid-text'>
+                        <p>
+                            The project is currently in development. This page will be updated with more information when it is complete...
+                        </p>
                     </div>
                 </div>
-                {/* <div className='grid-container'>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                        asdasdasd
-                        asdasdasd
-                        <br/>
-                    </div>
-                    <div className='grid-image'>
-                        <img src="" alt="yelpy-img-1" />
-                    </div>
-                    <div className='grid-text'>
-                        <span>
-                            sample text
-                        </span>
-                    </div>
-                </div> */}
             </div>
             <Loader type='pacman' />
         </>

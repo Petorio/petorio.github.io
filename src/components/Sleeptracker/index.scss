@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     margin: 0 auto;
     color: #fff;
     transform: translateY(-50%);
@@ -8,15 +8,28 @@
     left: 50%;
     top: 50%;
     gap: 1%;
-    font-family: 'Coolvetica';
-    font-weight: 200;
+    justify-content: center;
   }
 
   .grid-text {
-    background: purple;
-    font-size: 26px;
+    vertical-align: center;
   }
 
-  .grid-text > span {
-    padding: 10px;
+  .grid-text p {
+    background: none;
+    font-size: 18px;
+  }
+
+  .grid-image {
+    height: auto;
+    width: 70%;
+  }
+
+  .github-logo {
+    font-size: 32px;
+
+    &:hover svg {
+      color: #ffd700;
+    }
+
   }

@@ -20,3 +20,12 @@
   .grid-text > span {
     padding: 10px;
   }
+
+  .github-logo {
+    font-size: 32px;
+
+    &:hover svg {
+      color: #ffd700;
+    }
+
+  }
