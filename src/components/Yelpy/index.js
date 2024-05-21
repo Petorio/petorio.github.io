@@ -22,12 +22,14 @@ const Yelpy = () => {
                         <AnimatedLetters letterClass={letterClass} strArray={['I',"'",'m',' ','F','e','e','l','i','n','g',' ','Y','e','l','p','y']} idx={15}/>
                     </h1>
                     <p>
-                        I'm Feeling Yelpy - Yelpy for short - is a web application using Django and deployed on AWS through Elastic Beanstalk.
-                        Yelpy calls the Yelp Fusion API to get real-time restaurant data and information based off of user's parameters.
+                        During the development of a Django web application, I implemented an innovative "I'm Feeling Lucky" feature for restaurant discovery. 
+                        This feature allowed users to input specific query parameters such as location, cuisine, rating, and price, and receive a randomized list of 
+                        matching restaurants, enhancing the exploration experience.
                     </p>
                     <p>
-                        Yelpy runs through AWS' EC2 with their default VPC on two subnets. At first I leveraged their RDS service as well; however,
-                        I realized that this application does not need a database for now.
+                        To achieve this, I integrated the YelpFusion API, which enabled efficient querying and retrieval of restaurant data. 
+                        By leveraging this API, I delivered personalized and accurate restaurant recommendations, significantly enhancing the overall 
+                        user experience and satisfaction with the application.
                     </p>
                     <a target="_blank" rel='noreferrer' href='https://github.com/Petorio/I-m-Feeling-Yelpy' className='github-logo'>
                         <FontAwesomeIcon icon={faGithub} color='#fff'/>
